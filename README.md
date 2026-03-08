@@ -3,7 +3,7 @@
 Welcome to my personal portfolio repository! This responsive, dark-theme-enabled website is built to showcase my skills, projects, educational background, and achievements as a B.Tech Computer Science student and aspiring Software Engineer.
 
 ## 🚀 Live Demo
-*(You can add the link to your live portfolio here after deployment, e.g., GitHub Pages or Vercel)*
+*(https://mutyalaindira-portfolio.netlify.app/)*
 
 ## 🛠️ Built With
 - **HTML5** for semantic structure
@@ -50,3 +50,4 @@ To run this project locally on your machine:
 ---
 
 *Designed and developed by Mutyala Indira Mallarapu. All rights reserved.*
+
