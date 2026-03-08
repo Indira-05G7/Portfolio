@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutyala Indira Mallarapu| Portfolio</title>
+    <meta name="description" content="Portfolio of Mallarapu Mutyala Indira, aspiring Software Engineering intern.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        emailjs.init("zK2vVTobPsfF9gQs_");
+
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_22xknmq", "template_h7fjn2r", this)
+                .then(function () {
+                    alert("Message sent successfully!");
+                    form.reset();
+                }, function (error) {
+                    alert("Failed to send message");
+                    console.log(error);
+                });
+
+        });
+
+    });
+</script>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">MI<span></span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero section-padding fade-in">
+            <div class="container">
+                <div class="hero-wrapper">
+
+                    <!-- Text Content -->
+                    <div class="hero-content">
+                        <span class="greeting">Hello, world! I am</span>
+
+                        <h1 class="glitch" data-text="Mutyala Indira Mallarapu" style="font-size: 62px; ">
+                            Mutyala Indira Mallarapu
+                        </h1>
+
+                        <h2 class="role" style="font-size: 25px;">B.Tech Computer Science Student | Aspiring Software
+                            Engineer</h2>
+
+                        <p class="objective">
+                            B.Tech Computer Science student at Sri Vasavi Engineering College interested in software
+                            development and problem solving, with knowledge of DSA, OOP, DBMS, and Operating Systems.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn-primary">Get In Touch</a>
+                            <a href="#projects" class="btn-primary">View My Work</a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Image -->
+                    <div class="hero-image">
+                        <img src="image/profile.jpeg" alt="Indira">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding slide-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content glass-card">
+                    <p>I am a B.Tech Computer Science student at Sri Vasavi Engineering College with a strong interest
+                        in software development and problem solving. I enjoy building web applications and applying
+                        programming concepts to create practical solutions.</p>
+
+                    <p>My current focus is on Data Structures and Algorithms and full-stack web development. I have
+                        worked with technologies such as Java, Python, HTML, CSS, JavaScript, MySQL, and MongoDB.</p>
+
+                    <p>Through projects like an Online Bookstore application, a Travel Itinerary Planner, and a Blood
+                        Bank Management System, I have gained practical experience in developing applications and
+                        improving my programming skills.</p>
+
+                    <p> I am passionate about learning, exploring new tools, and building efficient solutions. I am
+                        always looking for opportunities to grow as a developer and contribute to meaningful projects.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding slide-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <p>Technologies and concepts I specialize in.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Programming </h3>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web & Frameworks </h3>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases </h3>
+                        <div class="tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                        <h3>CS Fundamentals </h3>
+                        <div class="tags">
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Object Oriented Programming</span>
+                            <span class="tag">Operating Systems</span>
+                            <span class="tag">DBMS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools & Platforms </h3>
+                        <div class="tags">
+                            <span class="tag">Git & GitHub</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">SalesForce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding slide-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>A selection of my recent work and creations.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <span class="project-type">Hackathon Project</span>
+                            <h3>Travel Itinerary Planner</h3>
+                            <p>Built a web-based itinerary planner capable of destination selection, daily scheduling,
+                                and an interactive UI within a limited timeframe.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <span class="project-type">Web Development</span>
+                            <h3>Online Bookstore Application</h3>
+                            <p>Developed an online bookstore featuring a product catalog, cart system, and billing UI
+                                with dynamic behavior and optimized user flow.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <span class="project-type">Python Application</span>
+                            <h3>Blood Bank Management System</h3>
+                            <p>Built a backend system utilizing core logic, file handling, and input validation to
+                                manage donor records, blood inventory, and resource requests.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <span class="project-type">Social Impact</span>
+                            <h3>Feast Forward</h3>
+                            <p>Created a food delivery initiative redirecting excess food from restaurants to people in
+                                need, focusing on logistics coordination and delivery planning.</p>
+                            <div class="project-tech">
+                                <span>Logistics</span>
+                                <span>Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section-padding slide-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Academic Journey</h2>
+                    <p>My educational background.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Edu 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Expected 2027</span>
+                            <h3>B.Tech (Computer Science & Engineering)</h3>
+                            <h4>Sri Vasavi Engineering College</h4>
+                            <p class="grade">CGPA: 8.88</p>
+                            <p>Currently pursuing deep fundamentals in software engineering, programming methodologies,
+                                and advanced computing concepts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2023</span>
+                            <h3>Intermediate</h3>
+                            <h4>Ch.sd.st.Theresa's College for Women</h4>
+                            <p class="grade">CGPA: 9.62</p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2021</span>
+                            <h3>Secondary School Certificate (SSC)</h3>
+                            <h4>St.Theresa's Girls High School</h4>
+                            <p class="grade">CGPA: 9.5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section class="cert-achieve section-padding slide-up">
+            <div class="container">
+                <div class="two-column-layout">
+                    <!-- Certifications -->
+                    <div id="certifications" class="certs-column">
+                        <div class="section-header align-left">
+                            <h2>Certifications</h2>
+                        </div>
+                        <ul class="cert-list">
+                            <li class="glass-list-item">
+                                <i class="fas fa-certificate text-gradient"></i>
+                                <div class="cert-details">
+                                    <h4>Oracle Certified Generative AI Professional</h4>
+                                    <span>July 2025</span>
+                                </div>
+                            </li>
+                            <li class="glass-list-item">
+                                <i class="fas fa-certificate text-gradient"></i>
+                                <div class="cert-details">
+                                    <h4>SalesForce AgentForce Specialist Certified</h4>
+                                    <span>Dec 2025</span>
+                                </div>
+                            </li>
+                            <li class="glass-list-item">
+                                <i class="fas fa-certificate text-gradient"></i>
+                                <div class="cert-details">
+                                    <h4>NPTEL – Internet of Things</h4>
+                                    <span>Score: 71%</span>
+                                </div>
+                            </li>
+                            <li class="glass-list-item">
+                                <i class="fas fa-certificate text-gradient"></i>
+                                <div class="cert-details">
+                                    <h4>Cambridge University English Certification</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div id="achievements" class="achievements-column">
+                        <div class="section-header align-left">
+                            <h2>Achievements</h2>
+                        </div>
+                        <ul class="timeline-alt">
+                            <li>
+                                <div class="icon-bullet"><i class="fas fa-trophy"></i></div>
+                                <div>
+                                    <h4>Hackathon Participant</h4>
+                                    <p>Sri Vasavi Engineering College. Developed the competitive travel planner
+                                        application under severe time constraints.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-bullet"><i class="fas fa-star"></i></div>
+                                <div>
+                                    <h4>Math Competitions</h4>
+                                    <p>Active participant in advanced mathematical challenges organized by Sri Vasavi
+                                        Engineering College.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-bullet"><i class="fas fa-puzzle-piece"></i></div>
+                                <div>
+                                    <h4>Algorithmic Problem Solving</h4>
+                                    <p>Consistently applied robust algorithmic logic to solve complex project challenges
+                                        throughout academic curriculum.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding slide-up">
+            <div class="container">
+                <div class="contact-card glass-card">
+                    <h2>Let's Connect</h2><br><br>
+
+                    <form id="contact-form" class="contact-form">
+
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" required placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required placeholder="Your Email">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" required
+                                placeholder="Your Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary large-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span style="color: var(--text-secondary);">Eluru, Andhra Pradesh</span>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="social-links contact-socials">
+                    <a href="mailto:mutyalaindiramallarapu@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mutyala-indira-mallarapu-1992b7319/" target="_blank"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Indira-05G7" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright"><br><br>
+                <p>&copy; 2026 Mallarapu Mutyala Indira. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
